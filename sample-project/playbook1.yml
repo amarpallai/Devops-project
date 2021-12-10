@@ -17,8 +17,8 @@
       src: index.html
       dest: /var/www/html
     notify: Restart httpd
-    handlers:
-    - name: Restart the httpd
-      service:
-        name: httpd
-        state: restarted
+  handlers:
+  - name: Restart the httpd
+    service:
+      name: httpd
+      state: restarted
